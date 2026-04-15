@@ -1,4 +1,3 @@
-![6A8CA5DC-6653-40AB-B69A-F6271DE608F0_1_105_c](https://github.com/user-attachments/assets/346d4463-28d0-4ada-9ea7-2edc7dcf5c34)
 # Repository of Ferdinand Mayer
 
 ### In this Repository my projects will be submitted.
@@ -21,3 +20,5 @@ My preferred Drinks are:
 What i want written on my Grave:
 > Here lies Ferdinand. He was a funny guy.
 
+This is the Logo of my DJ Collective:
+![6A8CA5DC-6653-40AB-B69A-F6271DE608F0_1_105_c](https://github.com/user-attachments/assets/346d4463-28d0-4ada-9ea7-2edc7dcf5c34)
