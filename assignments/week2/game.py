@@ -126,6 +126,7 @@ def cave1():
     print("You egnite the lighter.")
     time.sleep(1)
     print("The path of the cave splits.")
+    time.sleep(2)
     answer = ask_question("Which way do you want to go?", ["left", "right"])
     if answer == "left":
         print("You go left.")
@@ -253,6 +254,7 @@ def ask_question(question, valid_answers):
         else:
             print( "Invalid answer. If you want to exit enter 'exit' Otherwise please enter one of the following: " + ", ".join(valid_answers))
 
+
 # Game End
 def game_end():
     answer = ask_question("Do you want to play again?", ["yes", "no"])
@@ -261,7 +263,5 @@ def game_end():
     else:
         print("Thanks for playing!")
         sys.exit()
-
-
 
 game_initiation()
