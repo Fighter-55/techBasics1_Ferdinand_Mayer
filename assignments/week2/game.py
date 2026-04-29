@@ -72,7 +72,7 @@ def elf_game():
     dice_roll()
 
 def dice_roll():
-    roll = int(input("Roll a dice and enter the number."))
+    roll = ask_question("What number do you roll?", ["1", "2", "3", "4", "5", "6"])
     if roll in [2,4,6]:
         print("You get to have dinner with the elf.")
         time.sleep(1)
