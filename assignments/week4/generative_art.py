@@ -7,7 +7,7 @@ screen = turtle.Screen()
 screen.setup(width=1200, height=1000)
 screen.bgcolor("black")
 screen.colormode(1.0)
-screen.tracer(0)
+screen.tracer(600, 0)
 
 t = turtle.Turtle()
 t.hideturtle()
@@ -21,13 +21,13 @@ def draw_flower(x, y, size, color):
     t.penup()
     t.goto(x, y)
     t.pendown()
-    for i in range(36):
+    for m_i in range(36):
         t.pencolor(color)
         t.right(10)
-        for j in range(6):
+        for m_j in range(6):
             t.forward(size)
             t.right(60)
-            if j % 2 == 0:
+            if m_j % 2 == 0:
                 t.pensize(2)
             else:
                 t.pensize(1)
@@ -39,8 +39,8 @@ def draw_flower(x, y, size, color):
 def draw_flower_circle(num, radius, min_size, amplitude, hue_offset = 0.0):
     for idx in range(num):
         angle = (2 * math.pi / num) * idx
-        hue = (idx / num + hue_offset) % 1.0
-        r, g, b = colorsys.hsv_to_rgb(hue, 1.0, 1.0)
+        hue_circle = (idx / num + hue_offset) % 1.0
+        r, g, b = colorsys.hsv_to_rgb(hue_circle, 1.0, 1.0)
         flower_x = radius * math.cos(angle)
         flower_y = radius * math.sin(angle)
         flower_size = min_size + amplitude * abs(math.sin(idx))
@@ -48,6 +48,7 @@ def draw_flower_circle(num, radius, min_size, amplitude, hue_offset = 0.0):
 
 hue_values = [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
 
+# dots
 for p in range(3000):
     r, g, b = colorsys.hsv_to_rgb(random.choice(hue_values), 1.0, 1.0)
     t.penup()
@@ -55,9 +56,6 @@ for p in range(3000):
     t.dot(random.randint(5, 20), (r, g, b))
 
 # middle
-# mid_r, mid_g, mid_b = colorsys.hsv_to_rgb(0.0, 1.0, 1.0)
-# draw_flower(0, 0, 58, (mid_r, mid_g, mid_b))
-
 t.penup()
 t.goto(0, 0)
 t.pendown()
