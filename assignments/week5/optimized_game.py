@@ -237,3 +237,8 @@ def game_end():
 
 if __name__ == "__main__":
     game_initiation()
+
+# for the optimization I let Claude AI analyse the Code and give me suggestions for optimizing it.
+# It suggested the global time parameters but the simplifying of the cave section was my own Idea.
+# Claude AI helped me a lot to understand the Code and gave me "breadcrumbs" for finding the final solution.
+# I never used AI to create code only to understand it.
